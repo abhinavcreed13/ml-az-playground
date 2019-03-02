@@ -1,0 +1,19 @@
+.controlpanel {
+
+}
+
+.controlpanel .borderbox {
+    border:1px solid #efefef;
+    text-align:center;
+    cursor: pointer;
+    height:38px;
+}
+
+.controlpanel .borderbox span {
+    position: relative;
+    top:5px;
+}
+
+.controlpanel .borderbox.selected{
+    background-color: #efefef;
+}
