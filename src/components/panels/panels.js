@@ -4,7 +4,10 @@ import OutputPanel from './outputpanel/outputpanel';
 
 const Panels = () => {
     return (
-        <div className="panels">
+        <div className="panels" style={{
+            overflowY: 'auto',
+            'height': 600
+        }}>
             <ControlPanel></ControlPanel>
             <OutputPanel></OutputPanel>
         </div>
