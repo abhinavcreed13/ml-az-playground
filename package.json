@@ -18,7 +18,8 @@
     "react-dropzone": "^9.0.0",
     "react-scripts": "2.1.5",
     "react-select": "^2.4.1",
-    "react-table": "^6.9.2"
+    "react-table": "^6.9.2",
+    "react-x-file-uploader": "^1.0.26"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"

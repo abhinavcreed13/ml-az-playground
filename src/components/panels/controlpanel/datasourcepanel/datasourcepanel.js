@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import FileUploadCSV from './fileupload/fileuploadcsv';
 import './datasourcepanel.css';
+import FileUploader from 'react-x-file-uploader';
 
 class DataSource extends Component {
+
+    onUploadHandler = (data) => {
+        console.log("Parent->" + data);
+    }
 
     render() {
         const algorithm = this.props.algorithm;
@@ -12,9 +16,9 @@ class DataSource extends Component {
             case 'simple_linear_regression':
                 datasourcecontrol = (
                     <div className="datasourcecontrol">
-                        <FileUploadCSV />
+                        <FileUploader type='CSV' onUpload={this.onUploadHandler}/>
                     </div>
-                );
+                )
                 break;
         }
         return (
